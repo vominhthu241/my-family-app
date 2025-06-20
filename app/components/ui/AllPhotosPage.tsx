@@ -1,7 +1,7 @@
 "use client";
 import React from "react";
 import { useRouter } from "next/navigation";
-import Gallery from "react-photo-gallery";
+import Image from 'next/image';
 
 interface Photo {
   src: string;
@@ -73,7 +73,13 @@ const AllPhotosPage: React.FC = () => {
   return (
     <div className="all-photos-page">
       <button className="back-btn" onClick={handleBack}>&larr; Back</button>
-      <Gallery photos={allphotos} onClick={openLightbox} />
+      <div className="grid grid-cols-2 md:grid-cols-4 gap-4">
+        {allphotos.map((img, idx) => (
+          <div key={idx} className="relative w-full h-64">
+            <Image src={img.src} alt={`Gallery ${idx + 1}`} fill style={{objectFit: 'cover'}} />
+          </div>
+        ))}
+      </div>
     </div>
   );
 };
