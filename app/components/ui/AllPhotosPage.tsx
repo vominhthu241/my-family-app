@@ -1,9 +1,7 @@
 "use client";
-import React, { useState } from "react";
+import React from "react";
 import { useRouter } from "next/navigation";
 import Gallery from "react-photo-gallery";
-import Lightbox from "react-image-lightbox";
-import "react-image-lightbox/style.css";
 
 interface Photo {
   src: string;
@@ -62,16 +60,10 @@ const allphotos: Photo[] = [
 
 const AllPhotosPage: React.FC = () => {
   const router = useRouter();
-  const [lightboxIsOpen, setLightboxIsOpen] = useState(false);
-  const [currentPhotoIndex, setCurrentPhotoIndex] = useState(0);
 
+  // eslint-disable-next-line @typescript-eslint/no-unused-vars
   const openLightbox = (_event: React.MouseEvent, obj: { index: number }) => {
-    setCurrentPhotoIndex(obj.index);
-    setLightboxIsOpen(true);
-  };
-
-  const closeLightbox = () => {
-    setLightboxIsOpen(false);
+    // ...
   };
 
   const handleBack = () => {
@@ -82,20 +74,6 @@ const AllPhotosPage: React.FC = () => {
     <div className="all-photos-page">
       <button className="back-btn" onClick={handleBack}>&larr; Back</button>
       <Gallery photos={allphotos} onClick={openLightbox} />
-      {lightboxIsOpen && (
-        <Lightbox
-          mainSrc={allphotos[currentPhotoIndex].src}
-          nextSrc={allphotos[(currentPhotoIndex + 1) % allphotos.length].src}
-          prevSrc={allphotos[(currentPhotoIndex + allphotos.length - 1) % allphotos.length].src}
-          onCloseRequest={closeLightbox}
-          onMovePrevRequest={() =>
-            setCurrentPhotoIndex((currentPhotoIndex + allphotos.length - 1) % allphotos.length)
-          }
-          onMoveNextRequest={() =>
-            setCurrentPhotoIndex((currentPhotoIndex + 1) % allphotos.length)
-          }
-        />
-      )}
     </div>
   );
 };

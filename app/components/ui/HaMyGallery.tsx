@@ -1,7 +1,8 @@
 "use client";
 import React, { useState } from "react";
-import Lightbox from "react-image-lightbox";
-import "react-image-lightbox/style.css";
+import Lightbox from "yet-another-react-lightbox";
+import Zoom from "yet-another-react-lightbox/plugins/zoom";
+import "yet-another-react-lightbox/styles.css";
 
 interface HaMyImage {
   src: string;
@@ -50,21 +51,13 @@ const HaMyGallery: React.FC = () => {
           <button className="btn see-more">Xem thêm</button>
         </a>
       </div>
-      {isOpen && (
-        <Lightbox
-          mainSrc={images[photoIndex].src}
-          nextSrc={images[(photoIndex + 1) % images.length].src}
-          prevSrc={images[(photoIndex + images.length - 1) % images.length].src}
-          onCloseRequest={() => setIsOpen(false)}
-          onMovePrevRequest={() =>
-            setPhotoIndex((photoIndex + images.length - 1) % images.length)
-          }
-          onMoveNextRequest={() =>
-            setPhotoIndex((photoIndex + 1) % images.length)
-          }
-          imageTitle={images[photoIndex].alt}
-        />
-      )}
+      <Lightbox
+        open={isOpen}
+        close={() => setIsOpen(false)}
+        index={photoIndex}
+        slides={images}
+        plugins={[Zoom]}
+      />
     </div>
   );
 };
