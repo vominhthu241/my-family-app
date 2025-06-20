@@ -1,0 +1,9 @@
+{
+  "name": "Adrian and Anna's Family",
+  "short_name": "AA Family",
+  "description": "Adrian and Anna's Family Members",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#ffffff",
+  "theme_color": "#B0925A"
+} 
