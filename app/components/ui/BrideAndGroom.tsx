@@ -85,7 +85,7 @@ const BrideAndGroom: React.FC = () => {
           </div>
           <div className="hero-wrapper banner-text">
             <p className="countdown">{countdown}</p>
-            <h1 className="hero-title">We got married!</h1>
+            <h1 className="hero-title">A New Chapter Begins</h1>
             <p className="hero-time">Bây giờ, chúng mình có thêm hạnh phúc mới</p>
           </div>
         </div>

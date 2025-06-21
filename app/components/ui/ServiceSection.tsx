@@ -13,7 +13,7 @@ const ServiceSection: React.FC = () => {
           />
         </div>
         <div className="service-column service-content">
-          <h2 className="service-title">A New Chapter Begins</h2>
+          <h2 className="service-title">Celebrating a Milestone</h2>
           <div className="service-icon">
             <img src="/images/flower-divider-2.png" alt="Ha My photo 1" className="service-img" />
           </div>
