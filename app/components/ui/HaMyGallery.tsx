@@ -11,7 +11,7 @@ interface HaMyImage {
   alt: string;
 }
 
-const images: HaMyImage[] = Array.from({ length: 20 }, (_, i) => ({
+const images: HaMyImage[] = Array.from({ length: 18 }, (_, i) => ({
   src: `/images/hamy/hamy${i + 1}.webp`,
   width: 800,
   height: 1000,

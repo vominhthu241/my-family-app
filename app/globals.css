@@ -158,7 +158,7 @@ p {
   width: 100%;
   display: flex;
   flex-direction: column;
-  justify-content: center;
+  justify-content: flex-end;
   align-items: center;
   position: relative;
   overflow: hidden;
@@ -192,7 +192,7 @@ p {
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  width: 500px;
+  width: 100%;
 }
 
 .banner-svg svg {
@@ -1412,9 +1412,12 @@ h6 {
 }
 
 @media only screen and (min-width: 1024px) {
+  .banner-text {
+    padding-bottom: 5rem;
+  }
   .banner-svg {
-    width: 710px;
-    height: 645px;
+    width: 100%;
+    height: 120%;
   }
 
   .banner h2 {
