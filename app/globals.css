@@ -200,7 +200,7 @@ p {
   width: 100%;
   margin: auto;
   padding: 0;
-  fill: rgba(255, 255, 255, 0.75);
+  fill: rgba(255, 255, 255, 0.6);
 }
 
 .banner-text {
@@ -214,7 +214,7 @@ p {
     background-image: url(../public/images/banner-ipad.jpg);
   }
   .banner-svg svg {
-    max-width: 300px;
+    max-width: 100%;
   }
   .banner {
     width: auto;
@@ -1385,6 +1385,9 @@ p {
 }
 
 @media (max-width: 768px) {
+  .banner-text, .banner-svg {
+    display: none;
+  }
   .gallery-header {
     padding-top: 3rem;
   }
@@ -1413,7 +1416,7 @@ h6 {
 
 @media only screen and (min-width: 1024px) {
   .banner-text {
-    padding-bottom: 5rem;
+    padding-bottom: 3rem;
   }
   .banner-svg {
     width: 100%;

@@ -18,8 +18,8 @@ export const metadata: Metadata = {
   description: "Adrian and Anna's Family Memories",
   openGraph: {
     title: "Adrian and Anna's Family",
-    description: "Adrian and Anna's Family Invitation",
-    url: 'https://adrian-anna-family.info/',
+    description: "Adrian and Anna's Family Memories",
+    url: 'https://www.adriananna.com/',
     siteName: "Adrian and Anna's Family",
     images: [
       {
