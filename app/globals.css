@@ -739,7 +739,7 @@ p {
   display: flex;
   gap: 20px;
   flex-direction: column;
-  max-width: 938px;
+  max-width: 880px;
   margin: 0 auto;
 }
 
@@ -1169,11 +1169,13 @@ p {
     color: rgb(86, 119, 130);
 }
 
-.gallery-title h2 {
+.gallery-title h2, 
+.video-recap h2 {
     font-size: 2.5rem;
-    color: #333;
+    color: #5d6759;
     margin-bottom: 10px;
     font-family: 'SVN-Magnificent';
+    text-align: center;
 }
 
 .gallery-title p {
@@ -1203,7 +1205,8 @@ p {
         gap: 15px;
     }
 
-    .gallery-title h2 {
+    .gallery-title h2,
+    .video-recap h2 {
         font-size: 2rem;
     }
 
@@ -1475,4 +1478,32 @@ h6 {
   background-color: rgba(93, 103, 89, 1);
   padding-top: 5px;
   padding-left: 9px;
+} 
+
+.video-recap {
+  padding: 2rem 0;
+}
+
+@media (min-width: 768px) {
+  .video-recap {
+    padding: 2rem
+  }
+}
+
+.d-block {
+  display: block !important;
+}
+
+.d-none {
+  display: none !important;
+}
+
+@media (min-width: 768px) {
+  .d-md-none {
+    display: none !important;
+  }
+
+  .d-md-block {
+    display: block !important;
+  }
 }

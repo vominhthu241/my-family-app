@@ -12,7 +12,7 @@ const testimonials: Testimonial[] = [
   {
     id: 1,
     text: "Khánh Nhật & Minh Thư",
-    name: "Chú rể và Cô dâu",
+    name: "Chúng mình là",
     image: "/images/image1.webp"
   },
   {

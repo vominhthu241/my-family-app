@@ -5,6 +5,7 @@ import HaMyGallery from "./HaMyGallery";
 import Testimonials from "./Testimonials";
 import GalleryGrid from "./GalleryGrid";
 import WeddingDay from "./WeddingDay";
+import VideoPlayer from "./VideoPlayer";
 
 const BrideAndGroom: React.FC = () => {
   const currentDay = new Date();
@@ -90,6 +91,39 @@ const BrideAndGroom: React.FC = () => {
           </div>
         </div>
       </div>
+      <div className="page-section d-none d-md-block">
+      <VideoPlayer
+          title="Nhìn lại 1 năm của em bé"
+          iframe={
+            <iframe 
+            width="100%" 
+            height="100%" 
+            src="https://www.youtube.com/embed/NCY4qJNJQK8?si=vPl5moqOXuN739C9" 
+            title="HaMy 1 Year Recap" 
+            frameBorder="0" 
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+            referrerPolicy="strict-origin-when-cross-origin" 
+            allowFullScreen />
+          }
+        />
+      </div>
+      <div className="page-section d-block d-md-none">
+      <VideoPlayer
+          title="Nhìn lại 1 năm của em bé"
+          iframe={
+            <iframe
+              width="100%"
+              height="100%"
+              src="https://www.youtube.com/embed/0kGVGp-BoWo?si=IC4sm6bTQh3JBtIM"
+              title="HaMy 1 Year Recap"
+              frameBorder="0"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+              referrerPolicy="strict-origin-when-cross-origin"
+              allowFullScreen
+            />
+          }
+        />
+      </div>
       <div className="page-section">
         <ServiceSection />
       </div>
@@ -105,6 +139,22 @@ const BrideAndGroom: React.FC = () => {
       </div>
       <div className="gallery-container">
         <GalleryGrid />
+      </div>
+      <div className="page-section">
+        <VideoPlayer
+          title="Welcome"
+          iframe={
+            <iframe 
+            width="100%" 
+            height="100%" 
+            src="https://www.youtube.com/embed/6Xn7dwEapAg?si=kHQWW30bn5UCvJWK" 
+            title="Adrian Anna Wedding Opening" 
+            frameBorder="0" 
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+            referrerPolicy="no-referrer" 
+            allowFullScreen />
+          }
+        />
       </div>
       <div className="day-container">
         <WeddingDay />

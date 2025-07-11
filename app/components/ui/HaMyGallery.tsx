@@ -25,7 +25,7 @@ const HaMyGallery: React.FC = () => {
   return (
     <div className="hamy-gallery">
       <div className="gallery-title">
-        <h2>Hà My&apos;s First Year</h2>
+        <h2>Hà My 1 tuổi</h2>
         <p>Những khoảnh khắc đáng yêu của bé</p>
       </div>
       <div className="gallery-grid">
