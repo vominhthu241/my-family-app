@@ -142,16 +142,16 @@ const BrideAndGroom: React.FC = () => {
       </div>
       <div className="page-section">
         <VideoPlayer
-          title="Welcome"
+          title="Adrian & Anna Welcome Opening"
           iframe={
             <iframe 
             width="100%" 
             height="100%" 
-            src="https://www.youtube.com/embed/6Xn7dwEapAg?si=kHQWW30bn5UCvJWK" 
-            title="Adrian Anna Wedding Opening" 
+            src="https://www.youtube.com/embed/6Xn7dwEapAg?si=ityNXMFg6FNg9OZ1" 
+            title="Adrian & Anna Welcome Opening" 
             frameBorder="0" 
             allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
-            referrerPolicy="no-referrer" 
+            referrerPolicy="strict-origin-when-cross-origin" 
             allowFullScreen />
           }
         />
